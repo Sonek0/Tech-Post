@@ -5,7 +5,7 @@ async function newFormHandler(event) {
   const post_content = document
     .querySelector('textarea[name="post-content"]')
     .value.trim();
-    //"removes whitespace from both ends of a string" 
+  //"removes whitespace from both ends of a string"
   const response = await fetch(`/api/posts`, {
     method: "POST",
     body: JSON.stringify({
